@@ -90,7 +90,7 @@ source $ZSH/oh-my-zsh.sh
 # fpath=(/usr/local/share/zsh-completions $fpath)
 
 # Aliases
-alias config='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 alias zshconfig="code ~/.zshrc"
 alias ohmyzsh="code ~/.oh-my-zsh"
 alias brewery="brew update && brew upgrade && brew cleanup"
