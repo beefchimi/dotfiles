@@ -88,7 +88,7 @@ source $ZSH/oh-my-zsh.sh
 ###
 ### Aliases
 
-alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+alias dotf='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 alias zshconfig="code ~/.zshrc"
 alias ohmyzsh="code ~/.oh-my-zsh"
 alias brewery="brew update && brew upgrade && brew cleanup"
