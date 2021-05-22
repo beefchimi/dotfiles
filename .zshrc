@@ -1,4 +1,17 @@
 ###
+### Enable Powerlevel10k instant prompt
+
+# if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+  # source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+# fi
+
+###
+### Powerlevel10k config (may need to be at bottom of file)
+
+# ZSH_THEME='powerlevel10k/powerlevel10k'
+# [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+###
 ### ZSH Setup
 
 # If you come from bash you might have to change your $PATH.
