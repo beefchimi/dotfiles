@@ -5,14 +5,19 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/beefchimi/.oh-my-zsh"
+export ZSH='/Users/beefchimi/.oh-my-zsh'
 
 # Would you like to use another custom folder than $ZSH/custom?
 # ZSH_CUSTOM=/path/to/new-custom-folder
 
 # Set name of the theme to load
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="spaceship"
+ZSH_THEME='robbyrussell'
+
+###
+### HyperJS fix for leading percent symbol
+
+unsetopt PROMPT_SP
 
 ###
 ### Code completion
@@ -89,23 +94,26 @@ source $ZSH/oh-my-zsh.sh
 ### Aliases
 
 alias dotf='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
-alias zshconfig="code ~/.zshrc"
-alias ohmyzsh="code ~/.oh-my-zsh"
-alias brewery="brew update && brew upgrade && brew cleanup"
-alias gitcleanpull="git gc && git gc --auto && git prune && git fetch -p && git gc --prune=now && git pull"
-alias osw="dev cd shopify && git pull && dev cd web && git pull && dev cd online-store-web"
+alias zshconfig='code ~/.zshrc'
+alias ohmyzsh='code ~/.oh-my-zsh'
+alias brewery='brew update && brew upgrade && brew cleanup'
+alias gitcleanpull='git gc && git gc --auto && git prune && git fetch -p && git gc --prune=now && git pull'
+alias osw='dev cd shopify && git pull && dev cd web && git pull && dev cd online-store-web'
 
 ###
-### Spaceship Prompt
+### Exa aliases
 
-SPACESHIP_PROMPT_ADD_NEWLINE='true'
-# SPACESHIP_CHAR_SYMBOL=' \uf296'
-SPACESHIP_CHAR_PREFIX='\uf0e7 '
-# SPACESHIP_CHAR_SUFFIX=(" ")
-SPACESHIP_CHAR_COLOR_SUCCESS='yellow'
-SPACESHIP_PROMPT_DEFAULT_PREFIX='$USER'
-SPACESHIP_PROMPT_FIRST_PREFIX_SHOW='true'
-SPACESHIP_USER_SHOW='true'
+# General use
+alias ls='exa --icons'
+alias l='exa -lbF --icons --git'
+alias ll='exa -lbGF --icons --git'
+alias llm='exa -lbGd --icons --git --sort=modified'
+alias la='exa -lbhHigUmuSa --time-style=long-iso --icons --git --color-scale'
+alias lx='exa -lbhHigUmuSa@ --time-style=long-iso --icons --git --color-scale'
+
+# Specialty views
+alias lS='exa -1 --icons'
+alias lt='exa --icons --tree --level=2'
 
 ###
 ### Shopify
