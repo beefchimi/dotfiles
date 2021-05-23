@@ -1,0 +1,10 @@
+# Starship command prompt configuration file.
+
+# Customize the leading character for the input prompt
+[character]
+success_symbol = "[➜](bold green) "
+error_symbol = "[✗](bold red) "
+
+# Hide the awkward email address prompt
+[gcloud]
+disabled = true
