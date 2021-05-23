@@ -12,6 +12,7 @@ export ZSH='/Users/beefchimi/.oh-my-zsh'
 
 # Set name of the theme to load
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
+# Theme has no effect while Starship prompt is active
 ZSH_THEME='robbyrussell'
 
 ###
@@ -65,6 +66,11 @@ unsetopt PROMPT_SP
 plugins=(git zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
+
+###
+### Starship prompt
+
+eval "$(starship init zsh)"
 
 ###
 ### User configuration
