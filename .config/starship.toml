@@ -2,7 +2,7 @@
 
 # Customize the leading character for the input prompt
 [character]
-success_symbol = "[➜](bold green) "
+success_symbol = "[](bold yellow) "
 error_symbol = "[✗](bold red) "
 
 # Hide the awkward email address prompt

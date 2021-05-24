@@ -4,7 +4,7 @@
 
 const hyperlineHeight = 32;
 const hyperFontStack =
-  '"MesloLGS NF", "BlexMono Nerd Font", "Hack Nerd Font Mono", "DankMono Nerd Font", monospace';
+  '"BlexMono Nerd Font", "Hack Nerd Font Mono", "MesloLGS NF", "DankMono Nerd Font", monospace';
 
 module.exports = {
   config: {
