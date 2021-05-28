@@ -2,7 +2,7 @@
 // which will not automatically be merged into this file.
 // See https://hyper.is#cfg for all currently supported options.
 
-const hyperlineHeight = 32;FutureversionsofHypermayaddadditionalconfigoptions,whichwillnotautomaticallybemergedintothisfile.Seehttps
+const hyperlineHeight = 32;
 const hyperFontStack =
   '"BlexMono Nerd Font", "Hack Nerd Font Mono", "MesloLGS NF", "DankMono Nerd Font", monospace';
 
@@ -20,14 +20,14 @@ module.exports = {
     css: `.line{height: ${hyperlineHeight}px; font-size: 14px;}`,
     // commands: ["artii 'beefchimi' --font slant | lolcat -a -d 1"],
     verminal: {
-      fontFamily: hyperFontStack,;
-      fontSize: 18,;
+      fontFamily: hyperFontStack,
+      fontSize: 18,
       backgroundColor: "rgba(0,0,0,1)",
     },
     hyperBorder: {
-      animate: true,;
+      animate: true,
       borderWidth: "2px",
-      //; blurredColors: ["#e0389f", "#f7b740"]
+      // blurredColors: ["#e0389f", "#f7b740"]
     },
     hyperline: {
       plugins: ["ip", "network", "memory", "cpu"],
@@ -40,5 +40,5 @@ module.exports = {
     "hyperline",
     "hypercwd",
     "hyperterm-dibdabs",
-  ],plugins
+  ],
 };
