@@ -5,7 +5,7 @@
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH='/Users/beefchimi/.oh-my-zsh'
+export ZSH=$HOME/.oh-my-zsh
 
 # Set name of the theme to load
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
@@ -42,7 +42,22 @@ alias la='exa -lbhHigUmuSa@ --time-style=long-iso --icons --git --color-scale'
 alias lt='exa --icons --tree --level=2'
 
 ###
+### Man pages (enable color support)
+
+export LESS_TERMCAP_mb=$'\e[1;32m'
+export LESS_TERMCAP_md=$'\e[1;32m'
+export LESS_TERMCAP_me=$'\e[0m'
+export LESS_TERMCAP_se=$'\e[0m'
+export LESS_TERMCAP_so=$'\e[01;33m'
+export LESS_TERMCAP_ue=$'\e[0m'
+export LESS_TERMCAP_us=$'\e[1;4;31m'
+
+###
 ### Shopify
 
 [ -f /opt/dev/dev.sh ] && source /opt/dev/dev.sh
-if [ -e /Users/beefchimi/.nix-profile/etc/profile.d/nix.sh ]; then . /Users/beefchimi/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer
+
+# Added by Nix installer
+if [ -e /Users/beefchimi/.nix-profile/etc/profile.d/nix.sh ];
+  then . /Users/beefchimi/.nix-profile/etc/profile.d/nix.sh;
+fi
