@@ -33,5 +33,12 @@ module.exports = {
       plugins: ["ip", "network", "memory", "cpu"],
     },
   },
-  plugins: ["verminal", "hyperborder", "hyperpower", "hyperline", "hypercwd"],
+  plugins: [
+    "verminal",
+    "hyperborder",
+    "hyperpower",
+    "hyperline",
+    "hypercwd",
+    "hyperterm-dibdabs",
+  ],
 };

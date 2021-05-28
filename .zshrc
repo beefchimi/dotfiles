@@ -14,7 +14,7 @@ ZSH_THEME='robbyrussell'
 
 # Standard plugins can be found in ~/.oh-my-zsh/plugins/*
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
-plugins=(git zsh-syntax-highlighting)
+plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
 
 # Initialize oh-my-zsh
 source $ZSH/oh-my-zsh.sh
