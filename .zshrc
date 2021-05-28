@@ -19,9 +19,6 @@ plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
 # Initialize oh-my-zsh
 source $ZSH/oh-my-zsh.sh
 
-# HyperJS fix for leading percent symbol
-unsetopt PROMPT_SP
-
 # Starship prompt
 eval "$(starship init zsh)"
 
@@ -31,9 +28,7 @@ eval "$(starship init zsh)"
 alias dotf='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 alias zshconfig='code ~/.zshrc'
 alias ohmyzsh='code ~/.oh-my-zsh'
-alias brewery='brew update && brew upgrade && brew cleanup'
 alias gitcleanpull='git gc && git gc --auto && git prune && git fetch -p && git gc --prune=now && git pull'
-alias osw='dev cd shopify && git pull && dev cd web && git pull && dev cd online-store-web'
 
 # Exa color lists
 alias ls='exa --icons'
@@ -53,11 +48,12 @@ export LESS_TERMCAP_ue=$'\e[0m'
 export LESS_TERMCAP_us=$'\e[1;4;31m'
 
 ###
-### Shopify
+### NVM (added by nvm-sh)
 
-[ -f /opt/dev/dev.sh ] && source /opt/dev/dev.sh
+export NVM_DIR="$HOME/.nvm"
 
-# Added by Nix installer
-if [ -e /Users/beefchimi/.nix-profile/etc/profile.d/nix.sh ];
-  then . /Users/beefchimi/.nix-profile/etc/profile.d/nix.sh;
-fi
+# This loads nvm
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+
+# This loads nvm bash_completion
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
