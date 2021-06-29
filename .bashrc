@@ -3,6 +3,9 @@ if [[ -f /opt/dev/dev.sh ]] && [[ $- == *i* ]]; then
   source /opt/dev/dev.sh
 fi
 
+# GPG Key
+# export GPG_TTY=$(tty)
+
 # Aliases
 # alias dotf='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 
