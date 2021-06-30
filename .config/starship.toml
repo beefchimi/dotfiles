@@ -1,5 +1,7 @@
 # Starship command prompt configuration file.
 
+command_timeout = 1000
+
 # Customize the leading character for the input prompt
 [character]
 success_symbol = "[](bold yellow) "
