@@ -16,8 +16,10 @@ source $ZSH/oh-my-zsh.sh
 # HyperJS fix for leading percent symbol
 unsetopt PROMPT_SP
 
-# Starship prompt
-eval "$(starship init zsh)"
+if [ -v $SPIN ]; then
+  # Starship prompt
+  eval "$(starship init zsh)"
+fi
 
 # Spin testing
 
