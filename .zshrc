@@ -21,6 +21,14 @@ if [ -v $SPIN ]; then
   eval "$(starship init zsh)"
 fi
 
+# MAC OS X testing
+
+if [[ $USER == "beefchimi" ]]; then
+  echo "On MACOS"
+else
+  echo "Presumably on Linux"
+fi
+
 # Spin testing
 
 if [ $SPIN ]; then
