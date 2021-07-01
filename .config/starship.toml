@@ -1,4 +1,8 @@
-# Starship command prompt configuration file.
+###
+### Starship Configuration
+
+# Increase duration before giving up on executing command
+command_timeout = 1000
 
 # Customize the leading character for the input prompt
 [character]
