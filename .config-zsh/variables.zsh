@@ -20,5 +20,9 @@ export GPG_TTY=$(tty)
 # Theme has no effect while Starship prompt is active
 export ZSH_THEME='robbyrussell'
 
+# Dithered block pattern prompt
+export DITHER_PROMPT='\u2588\u2593\u2592\u2591'
+export DITHER_PROMPT_REVERSE='\u2591\u2592\u2593\u2588'
+
 # Set VSCode as default editor
 # export EDITOR='code'
