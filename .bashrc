@@ -1,15 +1,16 @@
 ###
 ### Bash Config
 
+. $HOME/.config-shell/variables.sh
+
 if [[ $DESKTOP_SESSION == "zorin" ]]; then
-  . $HOME/.config-bash/linux.bash
-  . $HOME/.config-bash/nvm.bash
+  . $CONFIG_BASH/linux.bash
+  . $CONFIG_SHELL/nvm.sh
 else
-  . $HOME/.config-bash/shopify.bash
+  . $CONFIG_BASH/shopify.bash
 fi
 
-. $HOME/.config-bash/aliases.bash
-. $HOME/.config-bash/variables.bash
+. $CONFIG_SHELL/aliases.sh
 
 # Starship Prompt
 eval "$(starship init bash)"

@@ -1,6 +1,8 @@
 ###
 ### Shopify
+### This file can likely be moved to .config-shell
 
+# Load Shopify dev
 [ -f /opt/dev/dev.sh ] && source /opt/dev/dev.sh
 
 # Added by Nix installer

@@ -1,14 +1,13 @@
 ###
 ### ZSH Config
 
-source $HOME/.config-zsh/variables.zsh
-source $HOME/.config-zsh/aliases.zsh
-source $HOME/.config-zsh/man-pages.zsh
+source $HOME/.config-shell/variables.sh
+source $CONFIG_ZSH/variables.zsh
 
 if [[ $DESKTOP_SESSION == "zorin" ]]; then
-  source $HOME/.config-zsh/nvm.zsh
+  source $CONFIG_SHELL/nvm.sh
 else
-  source $HOME/.config-zsh/shopify.zsh
+  source $CONFIG_ZSH/shopify.zsh
 fi
 
 # Standard plugins can be found in ~/.oh-my-zsh/plugins/*
@@ -24,7 +23,7 @@ unsetopt PROMPT_SP
 # Starship prompt
 eval "$(starship init zsh)"
 
-# Environment check
+# Environment confirmation
 if [[ $DESKTOP_SESSION == "zorin" ]]; then
   echo "$DITHER_PROMPT \u2a53 [ZSH] Zorin OS $DITHER_PROMPT_REVERSE"
 elif [[ $SPIN ]]; then
@@ -32,3 +31,7 @@ elif [[ $SPIN ]]; then
 else
   echo "$DITHER_PROMPT \uf8ff [ZSH] Mac OS $DITHER_PROMPT_REVERSE"
 fi
+
+source $CONFIG_SHELL/aliases.sh
+source $CONFIG_ZSH/aliases.zsh
+source $CONFIG_ZSH/man-pages.zsh

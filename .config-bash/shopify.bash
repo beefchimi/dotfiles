@@ -1,5 +1,6 @@
 ###
 ### Shopify
+### This file can likely be moved to .config-shell
 
 # Load Shopify dev,
 # but only if present and the shell is interactive.
