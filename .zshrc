@@ -2,14 +2,14 @@
 ### ZSH Config
 
 source $HOME/.config-shell/variables.sh
-source $CONFIG_ZSH/variables.zsh
+source $HOME/.config-shell/zsh/variables.zsh
 
-source $CONFIG_SHELL/functions.sh
+source $HOME/.config-shell/functions.sh
 
 if [[ $DESKTOP_SESSION == "zorin" ]]; then
-  source $CONFIG_SHELL/nvm.sh
+  source $HOME/.config-shell/nvm.sh
 else
-  source $CONFIG_ZSH/shopify.zsh
+  source $HOME/.config-shell/zsh/shopify.zsh
 fi
 
 # Standard plugins can be found in ~/.oh-my-zsh/plugins/*
@@ -25,9 +25,9 @@ unsetopt PROMPT_SP
 # Initialize Starship prompt
 eval "$(starship init zsh)"
 
-source $CONFIG_SHELL/aliases.sh
-source $CONFIG_ZSH/aliases.zsh
+source $HOME/.config-shell/aliases.sh
+source $HOME/.config-shell/zsh/aliases.zsh
 
-source $CONFIG_ZSH/man-pages.zsh
+source $HOME/.config-shell/zsh/man-pages.zsh
 
 envConfirmation "ZSH"
