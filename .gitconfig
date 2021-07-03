@@ -1,6 +1,11 @@
 [user]
 	name = beefchimi
 	email = curtdulmage@gmail.com
+	signingkey = 45A002F7F81F19B9
+[commit]
+	gpgsign = true
+[gpg]
+	program = gpg
 [diff]
 	algorithm = patience
 [protocol]
@@ -10,3 +15,5 @@
 	commitGraph = true
 [gc]
 	writeCommitGraph = true
+[pull]
+	ff = only
