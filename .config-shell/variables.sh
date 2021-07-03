@@ -10,8 +10,8 @@ export CONFIG_ZSH="$HOME/.config-zsh"
 export GPG_TTY=$(tty)
 
 # Dithered block pattern prompt
-export DITHER_PROMPT="█▓▒░"
-export DITHER_PROMPT_REVERSE="░▒▓█"
+export PROMPT_DITHER_START="╠█▓▒░"
+export PROMPT_DITHER_END="░▒▓█╣"
 
 # Set VSCode as default editor
 # export EDITOR="code"
