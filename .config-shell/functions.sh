@@ -1,6 +1,8 @@
 # Argument 1: string
 function stringLength() {
-  echo `expr length "$1"`
+  echo ${#1}
+  # Alternate syntax not supported by older versions of Bash
+  # echo `expr length "$1"`
 }
 
 # Argument 1: int
