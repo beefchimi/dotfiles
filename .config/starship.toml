@@ -12,3 +12,8 @@ error_symbol = "[✗](bold red) "
 # Hide the awkward email address prompt
 [gcloud]
 disabled = true
+
+[shell]
+bash_indicator = "[⥮](bold green)"
+zsh_indicator = "[⇋](bold green)"
+disabled = true
