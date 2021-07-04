@@ -3,8 +3,12 @@
 ###
 ### Shopify Spin bootstrap script
 
-# Manually clone private dotfiles repo
-# git clone -b shopify --single-branch git@github.com:beefchimi/dotfiles.git
+# Install Starship prompt (may require `nix-env`)
+# nix-env -iA nixos.starship
+sh -c "$(curl -fsSL https://starship.rs/install.sh)"
+
+# Install exa using Nix installed... as `apt install` does not seem to work
+nix-env -i exa
 
 # Install oh-my-zsh
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
@@ -13,9 +17,6 @@ sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
-
-# Install Starship prompt
-sh -c "$(curl -fsSL https://starship.rs/install.sh)"
 
 # Shell config
 ln -sfn ~/dotfiles/.config-shell ~/.config-shell
