@@ -17,7 +17,8 @@ ln -sfn ~/dotfiles/.config-shell ~/.config-shell
 # Starship config
 ln -sf ~/dotfiles/.config/starship.toml ~/.config/starship.toml
 
-# ZSH
+# Bash & ZSH
+ln -sf ~/dotfiles/.bashrc ~/.bashrc
 ln -sf ~/dotfiles/.zshrc ~/.zshrc
 
 # Git
@@ -28,14 +29,19 @@ ln -sf ~/dotfiles/.gitignore_global ~/.gitignore_global
 gpgconf --launch dirmngr
 gpg --keyserver keys.openpgp.org --recv D5CBA8EA14BEBE3FF3E0D21945A002F7F81F19B9
 
-# Install exa using Nix... as `apt install` does not seem to work
-if ! command -v exa &> /dev/null; then
-  nix-env -i exa
-fi
+# Manual post install script
+ln -sf ~/dotfiles/spin-post-install.sh ~/spin-post-install.sh
 
 # Install Starship prompt (force "yes")
 if ! command -v starship &> /dev/null; then
   sh -c "$(curl -fsSL https://starship.rs/install.sh)" -- --force
+fi
+
+# Install exa using Nix... as `apt install` does not seem to work
+if ! command -v exa &> /dev/null; then
+  if ! command -v nix-env &> /dev/null; then
+    nix-env -i exa
+  fi
 fi
 
 source ~/.zshrc
