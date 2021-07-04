@@ -8,7 +8,6 @@ sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.
 
 # Install ZSH plugins
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
-
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 
 # Shell config
@@ -25,23 +24,13 @@ ln -sf ~/dotfiles/.zshrc ~/.zshrc
 ln -sf ~/dotfiles/.gitconfig ~/.gitconfig
 ln -sf ~/dotfiles/.gitignore_global ~/.gitignore_global
 
+# Post install script
+ln -sf ~/dotfiles/spin-post-install.sh ~/spin-post-install.sh
+
 # GPG
 gpgconf --launch dirmngr
 gpg --keyserver keys.openpgp.org --recv D5CBA8EA14BEBE3FF3E0D21945A002F7F81F19B9
 
-# Manual post install script
-ln -sf ~/dotfiles/spin-post-install.sh ~/spin-post-install.sh
-
-# Install Starship prompt (force "yes")
-if ! command -v starship &> /dev/null; then
-  sh -c "$(curl -fsSL https://starship.rs/install.sh)" -- --force
-fi
-
-# Install exa using Nix... as `apt install` does not seem to work
-if ! command -v exa &> /dev/null; then
-  if command -v nix-env &> /dev/null; then
-    nix-env -i exa
-  fi
-fi
-
-source ~/.zshrc
+# Spin does not correctly install everything on initialization,
+# so this may need to be manually run once within the shell.
+source ~/spin-post-install.sh
