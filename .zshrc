@@ -23,7 +23,9 @@ source $ZSH/oh-my-zsh.sh
 unsetopt PROMPT_SP
 
 # Initialize Starship prompt
-eval "$(starship init zsh)"
+if command -v starship &> /dev/null; then
+  eval "$(starship init zsh)"
+fi
 
 source $HOME/.config-shell/aliases.sh
 source $HOME/.config-shell/zsh/aliases.zsh

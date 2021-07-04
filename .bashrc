@@ -14,6 +14,8 @@ fi
 . $HOME/.config-shell/aliases.sh
 
 # Initialize Starship prompt
-eval "$(starship init bash)"
+if command -v starship &> /dev/null; then
+  eval "$(starship init bash)"
+fi
 
 envConfirmation "Bash"
