@@ -6,8 +6,9 @@
 # Install exa using Nix... as `apt install` does not seem to work
 nix-env -i exa
 
-# Install Starship prompt (force "yes")
-sh -c "$(curl -fsSL https://starship.rs/install.sh)" -y
+# Install Starship prompt (regular curl install does not seem to work)
+# sh -c "$(curl -fsSL https://starship.rs/install.sh)" -y
+eval "$(curl -sSL https://starship.rs/install.sh)"
 
 # Install oh-my-zsh
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
