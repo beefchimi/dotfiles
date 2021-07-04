@@ -3,12 +3,13 @@
 ###
 ### Shopify Spin bootstrap script
 
-# Install Starship prompt (may require `nix-env`)
-# nix-env -iA nixos.starship
-sh -c "$(curl -fsSL https://starship.rs/install.sh)"
-
-# Install exa using Nix installed... as `apt install` does not seem to work
+# Install exa using Nix... as `apt install` does not seem to work
 nix-env -i exa
+
+# Install Starship prompt using NIX...
+# spin seems to cancel out of the required user prompts
+nix-env -iA nixos.starship
+# sh -c "$(curl -fsSL https://starship.rs/install.sh)"
 
 # Install oh-my-zsh
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
@@ -22,7 +23,7 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
 ln -sfn ~/dotfiles/.config-shell ~/.config-shell
 
 # Starship config
-ln -sfn ~/dotfiles/.config ~/.config
+ln -sf ~/dotfiles/.config/starship.toml ~/.config/starship.toml
 
 # ZSH
 ln -sf ~/dotfiles/.zshrc ~/.zshrc
