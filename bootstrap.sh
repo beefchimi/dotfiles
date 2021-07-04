@@ -6,10 +6,8 @@
 # Install exa using Nix... as `apt install` does not seem to work
 nix-env -i exa
 
-# Install Starship prompt using NIX...
-# spin seems to cancel out of the required user prompts
-nix-env -iA nixos.starship
-# sh -c "$(curl -fsSL https://starship.rs/install.sh)"
+# Install Starship prompt (force "yes")
+sh -c "$(curl -fsSL https://starship.rs/install.sh)" -y
 
 # Install oh-my-zsh
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
