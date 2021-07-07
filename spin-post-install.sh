@@ -15,6 +15,10 @@ if [[ $SPIN ]]; then
       nix-env -i exa
     fi
   fi
+
+  # Remove Shopify Git credentials added by `dev`,
+  # as these conflict with the Spin environment
+  sed -i '' -e '/\[credential\]/,$d' .gitconfig
 else
   echo "Not in Spin... skipping command installations!"
 fi
