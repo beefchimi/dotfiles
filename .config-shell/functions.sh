@@ -56,3 +56,20 @@ function envConfirmation() {
     drawFrameBottom "$TITLE_MAC"
   fi
 }
+
+function spinUpdateMasterBranches() {
+  local REPOS=(
+    "shopify"
+    "storefront-renderer"
+    "web"
+    "online-store-web"
+  )
+  local STEP_2="git pull"
+  local STEP_3="/usr/local/bin/update"
+  local STEP_4="/usr/local/bin/restart"
+
+  # Should exit early if one of the services is anything but `available`
+  for repo in "${REPOS[@]}"; do
+    spin shell $repo -- "cd src/github.com/shopify/$repo && $STEP_2 && $STEP_3 && $STEP_4";
+  done
+}
