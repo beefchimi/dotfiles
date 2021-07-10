@@ -57,6 +57,8 @@ function envConfirmation() {
   fi
 }
 
+# Arguments: none
+# Equivalent to the old `dev osw` alias
 function spinUpdateMasterBranches() {
   local REPOS=(
     "shopify"
