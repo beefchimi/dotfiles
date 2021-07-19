@@ -37,7 +37,8 @@ module.exports = {
     "verminal",
     "hyperborder",
     "hyperpower",
-    "hyperline",
+    // TODO: This plugin causes massive slowdowns on 3.1.0
+    // "hyperline",
     "hypercwd",
     "hyperterm-dibdabs",
   ],
