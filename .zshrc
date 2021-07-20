@@ -19,8 +19,7 @@ plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
 # Initialize oh-my-zsh
 source $ZSH/oh-my-zsh.sh
 
-# HyperJS fix for leading percent symbol
-unsetopt PROMPT_SP
+source $HOME/.config-shell/zsh/options.zsh
 
 # Initialize Starship prompt
 if command -v starship &> /dev/null; then
