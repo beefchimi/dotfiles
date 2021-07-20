@@ -11,6 +11,7 @@ else
   . $HOME/.config-shell/bash/shopify.bash
 fi
 
+. $HOME/.config-shell/bash/variables.bash
 . $HOME/.config-shell/aliases.sh
 
 # Initialize Starship prompt
