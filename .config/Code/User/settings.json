@@ -45,25 +45,16 @@
   "terminal.integrated.tabs.enabled": true,
   // Search + Sidebar
   "search.exclude": {
-    ".{dev,shadowenv.d}": true,
     "**/bower_components": true,
     "**/*.cache": true,
     "**/*.log": true,
-    // "**/legacy": true,
     "**/node_modules": true,
-    "**/build-intermediate": true,
     "**/dist": true,
     "**/esnext": true
   },
-  "files.exclude": {
-    "**/build-intermediate": true,
-    "build-intermediate/": true
-  },
+  "files.exclude": {},
   // Custom syntax highlighting
-  "files.associations": {
-    "*.sktl": "liquid",
-    "*.rmd": "markdown"
-  },
+  "files.associations": {},
   // Other
   "css.validate": false,
   "scss.validate": false,
