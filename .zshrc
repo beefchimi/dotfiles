@@ -12,12 +12,13 @@ fi
 
 # Standard plugins can be found in ~/.oh-my-zsh/plugins/*
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
-plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
+plugins=(git nvm zsh-autosuggestions zsh-syntax-highlighting)
 
 # Initialize oh-my-zsh
 source $ZSH/oh-my-zsh.sh
 
 source $HOME/.config-shell/zsh/options.zsh
+source $HOME/.config-shell/zsh/plugins.zsh
 
 # Initialize Starship prompt
 if command -v starship &> /dev/null; then
