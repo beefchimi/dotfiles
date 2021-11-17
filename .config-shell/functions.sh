@@ -51,3 +51,8 @@ function envConfirmation() {
     drawFrameBottom "$TITLE_MAC"
   fi
 }
+
+# Argument 1: string (path/to/directory)
+function yat() {
+  cd ~/Development/Yat/$1
+}
