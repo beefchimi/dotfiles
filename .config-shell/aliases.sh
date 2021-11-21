@@ -4,9 +4,6 @@
 alias dotf="/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME"
 alias gitcleanpull="git gc && git gc --auto && git prune && git fetch -p && git gc --prune=now && git pull"
 
-# Note: Using a `yat` function for now
-# alias yat="cd ~/Development/Yat"
-
 # Exa color lists
 if command -v exa &> /dev/null; then
   alias ls="exa --icons"
