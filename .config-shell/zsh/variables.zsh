@@ -7,7 +7,7 @@ export PATH="$HOME/bin:/usr/local/bin:$PATH"
 
 # Add Legendary executable: https://github.com/derrod/legendary
 # Necessary as `.profile` does not appear to be read by ZSH
-export PATH="$HOME/.local/bin:$PATH"
+# export PATH="$HOME/.local/bin:$PATH"
 
 # Define a custom ZSH cache directory
 export ZSH_CACHE_DIR="$HOME/.cache/zsh"
