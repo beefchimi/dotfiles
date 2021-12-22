@@ -14,11 +14,8 @@
   "files.insertFinalNewline": true,
   "files.trimTrailingWhitespace": true,
   "settingsSync.ignoredSettings": [
-    // "editor.fontSize",
     "editor.tokenColorCustomizations",
-    // "terminal.integrated.fontSize",
-    "workbench.colorTheme",
-    "window.zoomLevel"
+    "workbench.colorTheme"
   ],
   "workbench.activityBar.visible": false,
   "workbench.colorTheme": "Ayu One Dark",
@@ -32,7 +29,7 @@
   "editor.fontFamily": "DankMono Nerd Font, Hack Nerd Font Mono, Operator Mono, BlexMono Nerd Font, MesloLGS NF",
   "editor.fontLigatures": true,
   "editor.renderWhitespace": "all",
-  "editor.fontSize": 16,
+  "editor.fontSize": 14,
   "editor.tabSize": 2,
   "editor.wordWrap": "on",
   "html.format.endWithNewline": false,
@@ -66,5 +63,6 @@
   "gitlens.currentLine.scrollable": false,
   "gitlens.codeLens.enabled": false,
   "workbench.iconTheme": "material-icon-theme",
+  "workbench.preferredDarkColorTheme": "Ayu One Dark",
   "window.zoomLevel": 3
 }
