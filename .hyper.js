@@ -4,7 +4,7 @@
 // which will not automatically be merged into this file.
 // See https://hyper.is#cfg for all currently supported options.
 
-const hyperlineHeight = 32;
+// const hyperlineHeight = 32;
 const hyperFontStack =
   '"BlexMono Nerd Font", "Hack Nerd Font Mono", "MesloLGS NF", "DankMono Nerd Font", monospace';
 
@@ -23,42 +23,43 @@ module.exports = {
     cursorBlink: true,
     // foregroundColor: '#fff',
     // backgroundColor: '#000',
-    //  borderColor: '#333',
+    // borderColor: '#333',
     selectionColor: "rgba(248,28,229,0.3)",
     windowSize: [640, 960],
-    padding: `12px 14px ${hyperlineHeight}px 12px`,
-    css: `.line{height: ${hyperlineHeight}px; font-size: 14px;}`,
+    padding: 16,
+    // padding: `12px 14px ${hyperlineHeight}px 12px`,
+    // css: `.line{height: ${hyperlineHeight}px; font-size: 14px;}`,
     // termCSS: '',
     // workingDirectory: '',
-    //  showHamburgerMenu: '',
+    // showHamburgerMenu: '',
     // showWindowControls: '',
     // commands: ["artii 'beefchimi' --font slant | lolcat -a -d 1"],
     webGLRenderer: true,
     disableLigatures: false,
+    verminal: {
+      fontFamily: hyperFontStack,
+      fontSize: 18,
+      backgroundColor: "rgba(0,0,0,1)",
+    },
     /*
-        verminal: {
-              fontFamily: hyperFontStack,
-              fontSize: 18,
-              backgroundColor: "rgba(0,0,0,1)",
-        },
-        hyperBorder: {
-              animate: true,
-              borderWidth: "2px",
-              // blurredColors: ["#e0389f", "#f7b740"]
-        },
-        hyperline: {
-              plugins: ["ip", "network", "memory", "cpu"],
-        },
-        */
+    hyperBorder: {
+      animate: true,
+      borderWidth: "2px",
+      blurredColors: ["#e0389f", "#f7b740"],
+    },
+    hyperline: {
+      plugins: ["ip", "network", "memory", "cpu"],
+    },
+    */
   },
   plugins: [
-    //  "verminal",
+    "verminal",
     // "hyperborder",
-    // "hyperpower",
+    "hyperpower",
     // TODO: Hyperline causes massive slowdowns on 3.1.0
     // "hyperline",
-    // "hypercwd",
-    // "hyperterm-dibdabs",
+    "hypercwd",
+    "hyperterm-dibdabs",
   ],
 };
 //# sourceMappingURL=config-default.js.map
