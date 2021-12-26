@@ -20,3 +20,5 @@
 [credential]
 	helper =
 	helper = store --file /opt/dev/var/private/git_credential_store
+[init]
+	defaultBranch = main
