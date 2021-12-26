@@ -41,20 +41,22 @@ module.exports = {
       fontSize: 18,
       backgroundColor: "rgba(0,0,0,1)",
     },
-    /*
     hyperBorder: {
       animate: true,
-      borderWidth: "2px",
-      blurredColors: ["#e0389f", "#f7b740"],
+      borderRadiusInner: "8px",
+      adminBorderColors: ["random", "random"],
+      blurredColors: ["salmon", "purple"],
+      blurredAdminColors: ["yellow", "blue"],
     },
+    /*
     hyperline: {
-      plugins: ["ip", "network", "memory", "cpu"],
+      plugins: ['ip', 'network', 'memory', 'cpu'],
     },
     */
   },
   plugins: [
     "verminal",
-    // "hyperborder",
+    "hyperborder",
     "hyperpower",
     // TODO: Hyperline causes massive slowdowns on 3.1.0
     // "hyperline",
