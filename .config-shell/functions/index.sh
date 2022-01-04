@@ -7,5 +7,3 @@ else
   . $HOME/.config-shell/functions/launch.sh
   . $HOME/.config-shell/functions/general.sh
 fi
-
-

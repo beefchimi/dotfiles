@@ -13,3 +13,14 @@ function dev() {
 function yat() {
   cd ~/Development/Yat/$1
 }
+
+function runBootstrapGhLabels() {
+  if ! command -v bootstrapGhLabels &> /dev/null; then
+    echo "The bootstrapGhLabels program is now loaded."
+    source $HOME/.config-shell/functions/bootstrap-gh-labels.sh
+  else
+    echo "bootstrapGhLabels already sourced."
+  fi
+
+  bootstrapGhLabels $1 $2
+}
