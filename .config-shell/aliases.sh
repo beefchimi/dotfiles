@@ -4,6 +4,10 @@
 alias dotf="/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME"
 alias gitcleanpull="git gc && git gc --auto && git prune && git fetch -p && git gc --prune=now && git pull"
 
+if [[ $DESKTOP_SESSION != "zorin" ]]; then
+  alias brewery="brew update && brew upgrade && brew cleanup -s && brew doctor && brew missing"
+fi
+
 # Exa color lists
 if command -v exa &> /dev/null; then
   alias ls="exa --icons"
