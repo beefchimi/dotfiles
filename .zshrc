@@ -4,7 +4,7 @@
 source $HOME/.config-shell/variables.sh
 source $HOME/.config-shell/zsh/variables.zsh
 
-source $HOME/.config-shell/functions/general.sh
+source $HOME/.config-shell/functions/index.sh
 
 if [[ $DESKTOP_SESSION == "zorin" ]]; then
   source $HOME/.config-shell/nvm.sh

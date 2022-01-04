@@ -2,7 +2,7 @@
 ### Bash Config
 
 . $HOME/.config-shell/variables.sh
-. $HOME/.config-shell/functions/general.sh
+. $HOME/.config-shell/functions/index.sh
 
 if [[ $DESKTOP_SESSION == "zorin" ]]; then
   . $HOME/.config-shell/bash/linux.bash
