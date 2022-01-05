@@ -1,5 +1,4 @@
-# TODO: This script currently does not work.
-# However, running this outside of a `function` wrapper will work.
+# TODO: This script currently does not work in ZSH (must use bash).
 # Likely has something to do with this:
 # https://github.com/stedolan/jq/issues/501
 
@@ -16,18 +15,21 @@
 # TODO: Consider making the `src-repo` an argument.
 # TODO: Will be ideal to accept a prompt for arguments.
 
-# Argument 1: string (script to call)
+# Argument 1: string (repo name)
+# Argument 2: string (personal access token)
 function bootstrapGhLabels() {
   # TODO: This condition does not appear to be working correctly.
-  if [ -z "$1" ] && [ -z "$2" ]; then
+  if [ $# -lt 2 ]; then
     echo "You must provide a target repo name, as well as your GitHub personal access token."
-    exit
+     return 1 2>/dev/null
+     exit 1
   fi
 
   if ! command -v jq &> /dev/null; then
     echo "The jq program could not be found!"
     echo "Please see: https://stedolan.github.io/jq/download/"
-    exit
+     return 1 2>/dev/null
+     exit 1
   fi
 
   # If you use GitHub Enterprise, change this to "https://<your_domain>/api/v3"

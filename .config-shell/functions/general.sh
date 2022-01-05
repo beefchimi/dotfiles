@@ -14,6 +14,7 @@ function yat() {
   cd ~/Development/Yat/$1
 }
 
+# See `bootstrap-gh-labels.sh` for arguments
 function runBootstrapGhLabels() {
   if ! command -v bootstrapGhLabels &> /dev/null; then
     echo "The bootstrapGhLabels program is now loaded."
