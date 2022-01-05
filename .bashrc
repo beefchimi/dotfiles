@@ -1,16 +1,16 @@
 ###
 ### Bash Config
 
-. $HOME/.config-shell/variables.sh
-. $HOME/.config-shell/functions/index.sh
+source $HOME/.config-shell/variables.sh
+source $HOME/.config-shell/functions/index.sh
 
 if [[ $DESKTOP_SESSION == "zorin" ]]; then
-  . $HOME/.config-shell/bash/linux.bash
-  . $HOME/.config-shell/nvm.sh
+  source $HOME/.config-shell/bash/linux.bash
+  source $HOME/.config-shell/nvm.sh
 fi
 
-. $HOME/.config-shell/bash/variables.bash
-. $HOME/.config-shell/aliases.sh
+source $HOME/.config-shell/bash/variables.bash
+source $HOME/.config-shell/aliases.sh
 
 # Initialize Starship prompt
 if command -v starship &> /dev/null; then
