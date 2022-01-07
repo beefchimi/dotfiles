@@ -42,11 +42,11 @@ module.exports = {
       backgroundColor: "rgba(0,0,0,1)",
     },
     hyperBorder: {
-      animate: true,
+      // animate: true,
       borderRadiusInner: "8px",
-      adminBorderColors: ["random", "random"],
-      blurredColors: ["salmon", "purple"],
-      blurredAdminColors: ["yellow", "blue"],
+      // adminBorderColors: ["random", "random"],
+      // blurredColors: ["salmon", "purple"],
+      // blurredAdminColors: ["yellow", "blue"],
     },
     /*
     hyperline: {
