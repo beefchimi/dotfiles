@@ -13,6 +13,7 @@
 [core]
 	editor = code --wait --new-window
 	commitGraph = true
+	ignorecase = false
 [gc]
 	writeCommitGraph = true
 [pull]
