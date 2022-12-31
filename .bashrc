@@ -17,4 +17,7 @@ if command -v starship &> /dev/null; then
   eval "$(starship init bash)"
 fi
 
+# Added by Rust installation
+. "$HOME/.cargo/env"
+
 envConfirmation "Bash"

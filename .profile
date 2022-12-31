@@ -26,3 +26,6 @@ fi
 if [ -d "$HOME/.local/bin" ] ; then
   PATH="$HOME/.local/bin:$PATH"
 fi
+
+# Added by Rust installation
+. "$HOME/.cargo/env"
