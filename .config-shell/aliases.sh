@@ -8,10 +8,10 @@ if [[ $DESKTOP_SESSION != "zorin" ]]; then
   alias brewery="brew update && brew upgrade && brew cleanup -s && brew doctor && brew missing"
 fi
 
-# Exa color lists
-if command -v exa &> /dev/null; then
-  alias ls="exa --icons"
-  alias ll="exa -lbGF --icons --git"
-  alias la="exa -lbhHigUmuSa@ --time-style=long-iso --icons --git --color-scale"
-  alias lt="exa --icons --tree --level=2"
+# Eza color lists (formerly exa)
+if command -v eza &> /dev/null; then
+  alias ls="eza --icons"
+  alias ll="eza -lbGF --icons --git"
+  alias la="eza -lbhHigUmuSa@ --time-style=long-iso --icons --git --color-scale"
+  alias lt="eza --icons --tree --level=2"
 fi
