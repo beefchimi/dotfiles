@@ -1,6 +1,8 @@
 # Argument 1: string (script to call)
 function dev() {
-  if [ -f package.json -a -f yarn.lock ]; then
+  if [ -f package.json -a -f pnpm-lock.yaml ]; then
+    pnpm run $1
+  elif [ -f package.json -a -f yarn.lock ]; then
     yarn run $1
   elif [ -f package.json ]; then
     npm run $1
