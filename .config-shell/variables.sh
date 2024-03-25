@@ -11,3 +11,6 @@ export PROMPT_DITHER_END="░▒▓█╣"
 
 # Set VSCode as default editor
 # export EDITOR="code"
+
+# Set the JAVA_HOME environment variable for Android developlment
+export JAVA_HOME="/Applications/Android Studio.app/Contents/jbr/Contents/Home"
