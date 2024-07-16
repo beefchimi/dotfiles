@@ -11,11 +11,6 @@ function dev() {
   fi
 }
 
-# Argument 1: string (path/to/directory)
-function yat() {
-  cd ~/Development/Yat/$1
-}
-
 # See `bootstrap-gh-labels.sh` for arguments
 function runBootstrapGhLabels() {
   if ! command -v bootstrapGhLabels &> /dev/null; then
