@@ -1,5 +1,5 @@
 # `~/.profile`: executed by the command interpreter for login shells.
-# This file will not be not read by bash(1) if:
+# This file will not be read by bash(1) if:
 # neither `~/.bash_profile` or `~/.bash_login` exists.
 # See `/usr/share/doc/bash/examples/startup-files` for examples.
 # The files are located in the bash-doc package.
@@ -28,4 +28,4 @@ if [ -d "$HOME/.local/bin" ] ; then
 fi
 
 # Added by Rust installation
-. "$HOME/.cargo/env"
+# . "$HOME/.cargo/env"

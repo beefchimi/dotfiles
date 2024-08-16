@@ -31,3 +31,13 @@ source $HOME/.config-shell/zsh/aliases.zsh
 source $HOME/.config-shell/zsh/man-pages.zsh
 
 envConfirmation "ZSH"
+
+# This loads nvm bash_completion
+# Auto-added by nvm install script.
+# We have our own custom nvm initializer.
+# [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
+
+# Added by Homebrew (for Intel only)
+# Path is likely different for Intel vs Arm Macs...
+# Arm install adds to .zprofile
+# export PATH="/usr/local/sbin:$PATH"

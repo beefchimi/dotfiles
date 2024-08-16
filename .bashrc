@@ -18,6 +18,6 @@ if command -v starship &> /dev/null; then
 fi
 
 # Added by Rust installation
-. "$HOME/.cargo/env"
+# . "$HOME/.cargo/env"
 
 envConfirmation "Bash"
