@@ -1,25 +1,31 @@
 [user]
-	name = beefchimi
-	email = curtdulmage@gmail.com
-	signingkey = 45A002F7F81F19B9
+  name = beefchimi
+  email = curtdulmage@gmail.com
+	# These keys are public and safe to expose.
+  signingkey = ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQCXHVs++qka4WROB/V9IC/Pfz6/ygYJOW1zkTFHdYV/EiLJoK2b3kCcCLVhvo07qJNi/LRzBm2tVeSLhqoMmcnFBdTPpkh3BjlfFZj3CfqDhzMo3fVxYivbGp0cjpDLNPwG7M4iDBzWvE+8goH/VeZRtXTtk0kJp/Y+KG7flHHVpu9iR0PhyHNDxXNPtbjInq3QvB6mZL9hAxL/dk0rCZMY21dpbWSPjNZVEvBFq4MSMMtJbz/OUFTZ85VOgVAk+vaomF/xQtcWXrgS4U6z6NgFqicgZdoUeoKD9jI21Ob0D4CC+aGLQoArga7QRNdFHV110OmfXJTFSW9dpYkKkoQaGD9yg+itFYgnD6uCBFFXL4TDqFzl2/fka6UjCFH7eWCeE2T03ZqcQVeClbjqAYkt1jBANMWeOCZL0cQm/A2sAxZKFhKzE14QiUwL21oGVEW+BD0DomUxJazQf7Z6Ykpy+1Ha3Gr1an9Ely/l/VId8wjGUPXeDfgRGu+ujuVAUDlaQL5GGdKYuH2pVuxgcy4yOifND33TTPn5hD9zSJB1ximK280VowfqPOCI+zaBPVK+UGnJv1ZnKUDsxfFTbAroMP3f5DzELRWUT/tP/DzUfxnkeFNRxOhwxSX8TvHY+XNVt1DCWPQk+iWVUjHv8ebxGcvv+DO1eSIfmdvKYgYQZQ==
+  # Original GPG config:
+  # signingkey = 45A002F7F81F19B9
 [commit]
-	gpgsign = true
+  gpgsign = true
 [gpg]
-	program = gpg
+  program = gpg
+  format = ssh
+[gpg "ssh"]
+  program = /Applications/1Password.app/Contents/MacOS/op-ssh-sign
 [diff]
-	algorithm = patience
+  algorithm = patience
 [protocol]
-	version = 2
+  version = 2
 [core]
-	editor = code --wait --new-window
-	commitGraph = true
-	ignorecase = false
+  editor = code --wait --new-window
+  commitGraph = true
+  ignorecase = false
 [gc]
-	writeCommitGraph = true
+  writeCommitGraph = true
 [pull]
-	ff = only
+  ff = only
 [credential]
-	helper =
-	helper = store --file /opt/dev/var/private/git_credential_store
+  helper =
+  helper = store --file /opt/dev/var/private/git_credential_store
 [init]
-	defaultBranch = main
+  defaultBranch = main

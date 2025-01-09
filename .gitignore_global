@@ -1,13 +1,31 @@
 # General
 .dotfiles
 
-# OS X
+# OS files
 .DS_Store?
 .DS_Store
+._*
+
+# Files that might appear in the root of a volume
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# Directories potentially created on remote AFP share
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# Other Apple files
 .AppleDouble
 .LSOverride
 Icon
-._*
 
 # Windows
 ehthumbs.db
@@ -32,14 +50,23 @@ Session.vim
 tags
 tags-ja
 
-# Node
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Dependencies
+.lock-wscript
+.node_repl_history
+.npm
+.yarn-integrity
 node_modules
 npm-debug.log
+web_modules/
 
-# Environment
-.env
-.env.development
-.env.test
+# Output of 'npm pack'
+*.tgz
 
 # IDE
 .idea
